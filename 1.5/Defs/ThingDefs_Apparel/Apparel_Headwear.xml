@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Defs>
+
+    <!--__Kettle Helmet__-->
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>ODZ_KettleHelmet</defName>
+        <label>kettle helmet</label>
+        <description>A call back to the medieval age, this helmet has stood the test of time and is a common sight among New Antioch Yeomen.</description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>FlakArmor</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>205</displayPriority>
+        </recipeMaker>
+        <graphicData>
+            <texPath>stuffable/headwear/kettlehelm/kettlehelm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <statBases>
+            <WorkToMake>8000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1.2</Mass>
+            <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Plasteel>10</Plasteel>
+        </costList>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>stuffable/headwear/kettlehelm/kettlehelm</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>IndustrialMilitaryAdvanced</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65,1)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3,1)</min>
+                    <max>(0.5,0.5,0.5,1)</max>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!--__Sallet__-->
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>ODZ_Sallet</defName>
+        <label>sallet</label>
+        <description>A common headpiece worn by the faithful to protect against blade and shrapnel.</description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>FlakArmor</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>205</displayPriority>
+        </recipeMaker>
+        <graphicData>
+            <texPath>stuffable/headwear/sallet/sallet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <statBases>
+            <WorkToMake>8000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1.2</Mass>
+            <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Plasteel>10</Plasteel>
+        </costList>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>stuffable/headwear/sallet/sallet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>IndustrialMilitaryAdvanced</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65,1)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3,1)</min>
+                    <max>(0.5,0.5,0.5,1)</max>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!--__Bascinet__-->
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>ODZ_Bascinet</defName>
+        <label>bascinet</label>
+        <description>A sturdy protective piece for the men and women of New Antioch.</description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>FlakArmor</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>205</displayPriority>
+        </recipeMaker>
+        <graphicData>
+            <texPath>stuffable/headwear/bascinet/bascinet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <equippedStatOffsets>
+            <ToxicResistance>0.25</ToxicResistance>
+        </equippedStatOffsets>
+        <statBases>
+            <WorkToMake>8000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1.2</Mass>
+            <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Plasteel>10</Plasteel>
+        </costList>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/headwear/Bacinet/bascinet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>IndustrialMilitaryAdvanced</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65,1)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3,1)</min>
+                    <max>(0.5,0.5,0.5,1)</max>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!--__Gas Mask__-->
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>ODZ_GasMask</defName>
+    <label>new antioch gas mask</label>
+    <description>A mask to quell the toxic weapons often lobbed by the pathetic heretic filth and abominable bomb witch.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Apperal/headwear/GasMask/gasmask_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>0.4</Mass>
+      <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+      <Insulation_Cold>1.5</Insulation_Cold>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>Machining</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMask</unfinishedThingDef>
+      <recipeUsers Inherit="False">
+        <li>TableMachining</li>
+      </recipeUsers>
+      <displayPriority>215</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Steel>20</Steel>
+      <Chemfuel>20</Chemfuel>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <immuneToToxGasExposure>true</immuneToToxGasExposure>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apperal/headwear/GasMask/gasmask</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <drawData>
+        <dataNorth>
+          <layer>-3</layer>
+        </dataNorth>
+      </drawData>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
+    </apparel>
+  </ThingDef>
+
+</Defs>
