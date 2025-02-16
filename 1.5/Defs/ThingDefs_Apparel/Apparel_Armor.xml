@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<!--__Trench Coat__-->
+
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>ODZ_TrenchCoat</defName>
+    <label>new antioch overcoat</label>
+    <description>A coat to not only keep the soldiers of the militant Christ warm, but also to take the brunt of the mud and gore in no mans land.</description>
+    <graphicData>
+      <texPath>stuffable/shell/antiochgreatcoat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>stuffable/shell/antiochgreatcoat</wornGraphicPath>
+      <anyTechLevelCanUseForWarmth>true</anyTechLevelCanUseForWarmth>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+        <li>Neolithic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.4,0.3,0.15)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.5,0.5,0.5)</min>
+          <max>(1,1,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+    <recipeMaker>
+      <displayPriority>220</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<!--__Uniform__-->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>ODZ_Uniform</defName>
+    <description>A uniform belonging to the faithful forces of New Antioch, worn by Yeomen and Officers alike.</description>
+    <label>new antioch uniform</label>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>208</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>stuffable/onskin/antiochuniform</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2700</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.24</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.29</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.12</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>stuffable/onskin/antiochuniform</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--__Engineer Armor__-->
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>ODZ_EngineerArmor</defName>
+    <label>combat engineer armor</label>
+    <description>A Cuirass belonging to the faithful of New Antioch, this armor is a staple piece for sappers and combat engineers performing dangerous tasks and offers decent protection. Comes with long-fused satchel charges.</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>220</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>stuffable/middle/engineerarmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>4</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.27</ArmorRating_Heat>
+      <Insulation_Cold>1</Insulation_Cold>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+      <Cloth>30</Cloth>
+      <Steel>60</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>stuffable/middle/engineerarmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>0.5</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>

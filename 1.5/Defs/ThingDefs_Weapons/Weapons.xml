@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Defs>
+
+    <!--____Ranged Weapons____-->
+
+    <!--__Tommy Gun__-->
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>ODZ_TommyGun</defName>
+        <label>tommy gun</label>
+        <description>Created by living Saint John T. Thompson, the Tommy gun "trench sweeper" is a favorite in the arms of the faithful.</description>
+        <graphicData>
+            <texPath>Weapon/Ranged/TommyGun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <soundInteract>Interact_SMG</soundInteract>
+        <weaponClasses>
+            <li>RangedLight</li>
+            <li>ShortShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>ShortShots</li>
+        </weaponTags>
+        <recipeMaker>
+            <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <displayPriority>410</displayPriority>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2.5</Mass>
+            <AccuracyTouch>0.90</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.35</AccuracyMedium>
+            <AccuracyLong>0.15</AccuracyLong>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>20</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <WoodLog>20</WoodLog>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_MachinePistol</defaultProjectile>
+                <warmupTime>0.5</warmupTime>
+                <range>19.9</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <soundCast>Shot_MachinePistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!--__Trench Shotgun__-->
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>OPZ_TrenchShotgun</defName>
+        <label>pump shotgun</label>
+        <description>PLACEHOLDER</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapon/Ranged/TrenchShotgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <weaponClasses>
+            <li>ShortShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>ShortShots</li>
+            <li>PumpShotgun</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>3.4</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyMedium>0.77</AccuracyMedium>
+            <AccuracyLong>0.64</AccuracyLong>
+            <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>30</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <WoodLog>30</WoodLog>
+        </costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>430</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_Shotgun</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>15.9</range>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!--__Maxim Pattern Machinegun__-->
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>ODZ_MaximPatternMinigun</defName>
+        <label>maxim pattern minigun</label>
+        <description>Created by Saint Hiram Maxim in 1884 the scourge of heretics. It was the first fully automatic machine gun in the world. Wielded by the faithful Heavy Mechanized Infantry.</description>
+        <graphicData>
+            <texPath>Weapon/Ranged/MaximPatternMachinegun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>60000</WorkToMake>
+            <Mass>10</Mass>
+            <AccuracyTouch>0.15</AccuracyTouch>
+            <AccuracyShort>0.25</AccuracyShort>
+            <AccuracyMedium>0.25</AccuracyMedium>
+            <AccuracyLong>0.18</AccuracyLong>
+            <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>160</Steel>
+            <ComponentIndustrial>20</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <displayPriority>450</displayPriority>
+        </recipeMaker>
+        <techLevel>Industrial</techLevel>
+        <weaponTags>
+            <li>GunHeavy</li>
+            <li>Minigun</li>
+        </weaponTags>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.25</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_Minigun</defaultProjectile>
+                <warmupTime>2.5</warmupTime>
+                <range>30.9</range>
+                <burstShotCount>25</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>Shot_Minigun</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>barrels</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11.7</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!--__St. Enfield Pattern rifle__-->
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>ODZ_EnfieldRifle</defName>
+        <label>st. enfield pattern rifle</label>
+        <description>The standard arm and backbone of New Antiochs forces, created by the faithful Saint James Paris Lee.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapon/Ranged/StEnfieldPatternRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>LongShots</li>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <recipeMaker>
+            <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <displayPriority>425</displayPriority>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>45000</WorkToMake>
+            <Mass>4</Mass>
+            <AccuracyTouch>0.50</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.86</AccuracyMedium>
+            <AccuracyLong>0.88</AccuracyLong>
+            <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>30</Steel>
+            <ComponentIndustrial>8</ComponentIndustrial>
+            <WoodLog>30</WoodLog>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_SniperRifle</defaultProjectile>
+                <warmupTime>3.5</warmupTime>
+                <range>44.9</range>
+                <soundCast>Shot_SniperRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <weaponTags Inherit="False">
+            <li>SniperRifle</li>
+        </weaponTags>
+    </ThingDef>
+
+    <!--__Grenade__-->
+
+    <!--____Melee Weapons____-->
+
+    <!--__Hammer__-->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>ODZ_Hammer</defName>
+        <label>hammer</label>
+        <description>PLACEHOLDER</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapon/Melee/Hammer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Medieval</techLevel>
+        <costStuffCount>50</costStuffCount>
+        <statBases>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>10</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <recipeMaker>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>head</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15.7</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!--__Halberd__-->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>ODZ_Halberd</defName>
+        <label>halberd</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Weapon/Melee/Halberd</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Medieval</techLevel>
+        <costStuffCount>150</costStuffCount>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>5</Mass>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>LongBlades</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>440</displayPriority>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>11</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+            <li>
+                <label>head</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+    </ThingDef>
+
+    <!--____Shields____-->
+
+    <!--__Trench Shield__-->
+
+    <!--   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>ODZ_TrenchShield</defName>
+        <label>trench shield</label>
+        <description>PLACEHOLDER</description>
+        <burnableByRecipe>true</burnableByRecipe>
+        <smeltable>false</smeltable>
+        <techLevel>Medieval</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Weapon/Shields/TrenchShield</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit= "false">
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costStuffCount>50</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <equipmentType>None</equipmentType>
+        <thingClass>VFECore.Apparel_Shield</thingClass>
+        <weaponTags>
+            <li>ODZ_Shields</li>
+        </weaponTags>
+        <statBases>
+            <Mass>3</Mass>
+            <WorkToMake>6000</WorkToMake>
+            <MarketValue>300</MarketValue>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <bodyPartGroups>
+                <li>LeftHand</li>
+            </bodyPartGroups>
+            <layers>
+                <li>VFEC_OuterShell</li>
+            </layers>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <comps>
+            <li Class="VFECore.CompProperties_Shield">
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Weapon/Shields/TrenchShield</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.8</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(-0.2, 0, 0.60)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(0.15, 0, 0.65)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0.25, -0.047, 0.65)</offset>
+                    </south>
+                    <west>
+                        <offset>(-0.15, -0.05, 0.65)</offset>
+                        <behind>true</behind>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <equippedAngleOffset>0</equippedAngleOffset>
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension">
+                <useFactionColourForPawnKinds>
+
+                </useFactionColourForPawnKinds>
+            </li>
+        </modExtensions>
+    </ThingDef> -->
+
+    <!--__Big Shield__-->
+
+    <!--   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>ODZ_BigShield</defName>
+        <label>big shield</label>
+        <description>PLACEHOLDER</description>
+        <burnableByRecipe>true</burnableByRecipe>
+        <smeltable>false</smeltable>
+        <techLevel>Medieval</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Weapon/Shields/MechShield</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit= "false">
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costStuffCount>200</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <equipmentType>None</equipmentType>
+        <thingClass>VFECore.Apparel_Shield</thingClass>
+        <weaponTags>
+            <li>ODZ_Shields</li>
+        </weaponTags>
+        <statBases>
+            <Mass>10</Mass>
+            <WorkToMake>6000</WorkToMake>
+            <MarketValue>300</MarketValue>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <bodyPartGroups>
+                <li>LeftHand</li>
+            </bodyPartGroups>
+            <layers>
+                <li>VFEC_OuterShell</li>
+            </layers>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <comps>
+            <li Class="VFECore.CompProperties_Shield">
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Weapon/Shields/MechShield</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.8</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(-0.2, 0, 0.60)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(0.15, 0, 0.65)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0.25, -0.047, 0.65)</offset>
+                    </south>
+                    <west>
+                        <offset>(-0.15, -0.05, 0.65)</offset>
+                        <behind>true</behind>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <equippedAngleOffset>0</equippedAngleOffset>
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension">
+                <useFactionColourForPawnKinds>
+
+                </useFactionColourForPawnKinds>
+            </li>
+        </modExtensions>
+    </ThingDef> -->
+
+    <!--__Grenade__-->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>ODZ_Grenade</defName>
+        <label>frag grenades</label>
+        <description>Exploding in a decent blast radius, these Grenades also have the potential to damage nearby walls. Take care when using near structures leading to space or even near your own marines! It is set to detonate in 5 seconds. These are meant to use with the M3 pattern armors.</description>
+        <recipeMaker>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Weapon/Ranged/Grenade</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stackLimit>10</stackLimit>
+        <intricate>true</intricate>
+        <tickerType>Normal</tickerType>
+        <uiIconScale>1.3</uiIconScale>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <Mass>1</Mass>
+            <WorkToMake>100</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>5</Steel>
+            <Chemfuel>20</Chemfuel>
+        </costList>
+        <thingCategories>
+            <li>Grenades</li>
+        </thingCategories>
+        <smeltable>true</smeltable>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseFragGrenadeProjectile">
+        <defName>ODZ_GrenadeProjectile</defName>
+        <label>frag grenade</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Weapon/Ranged/Grenade</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <explosionRadius>1.9</explosionRadius >
+            <damageDef>Bomb</damageDef>
+            <!-- Use default damage from explosion def -->
+            <explosionDelay>100</explosionDelay>
+        </projectile>
+    </ThingDef>
+
+</Defs>
